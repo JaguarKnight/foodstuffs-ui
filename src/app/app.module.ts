@@ -6,10 +6,14 @@ import { FoodstuffsService } from './services/foodstuffs.service';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { DashboardComponent } from './components/views/dashboard/dashboard.component';
+import { ButtonComponent } from './components/common/button/button.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    DashboardComponent,
+    ButtonComponent
   ],
   imports: [
     BrowserModule,

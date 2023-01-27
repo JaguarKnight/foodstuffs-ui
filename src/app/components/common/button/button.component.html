@@ -1,0 +1,5 @@
+<button
+    class="w-24 capitalize text-white font-bold py-2 px-4 rounded shadow-md focus:outline-none disabled:opacity-50 disabled:cursor-default"
+    [class]="getBackgroundColorClass(color)" [disabled]="disabled" (click)="onClick()">
+    {{ label }}
+</button>
