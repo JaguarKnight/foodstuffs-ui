@@ -13,6 +13,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { IconComponent } from './components/common/icon/icon.component';
 import { DesktopMenuComponent } from './components/navbar/desktop-menu/desktop-menu.component';
 import { MobileMenuComponent } from './components/navbar/mobile-menu/mobile-menu.component';
+import { ClickOutsideDirective } from './directives/click-outside.directive';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { MobileMenuComponent } from './components/navbar/mobile-menu/mobile-menu
     NavbarComponent,
     IconComponent,
     DesktopMenuComponent,
-    MobileMenuComponent
+    MobileMenuComponent,
+    ClickOutsideDirective
   ],
   imports: [
     BrowserModule,

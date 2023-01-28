@@ -17,7 +17,7 @@ export class ButtonComponent {
   @Input()
   label: string = "";
 
-  getBackgroundColorClass(color: string): Object {
+  getBackgroundColorClass(color: string): string[] {
     switch (color) {
       case "green":
         return this.disabled
