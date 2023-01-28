@@ -1,1 +1,8 @@
-<p>desktop-menu works!</p>
+<div class="flex grow h-full mx-12">
+    <menu *ngFor="let menuItem of menuItems"
+        class="flex items-center transition ease-in-out duration-300 hover:bg-sky-900">
+        <a class="px-4 cursor-pointer" [routerLink]="menuItem.link">
+            {{ menuItem.label }}
+        </a>
+    </menu>
+</div>

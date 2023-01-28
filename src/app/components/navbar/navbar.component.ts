@@ -5,5 +5,14 @@ import { Component } from '@angular/core';
   templateUrl: './navbar.component.html'
 })
 export class NavbarComponent {
-
+  menuItems = [
+    {
+      label: "first",
+      link: "/"
+    },
+    {
+      label: "second",
+      link: "/"
+    }
+  ]
 }
