@@ -11,7 +11,7 @@ export class AppComponent implements OnInit {
   constructor(private readonly foodstuffsService: FoodstuffsService) { }
 
   ngOnInit() {
-    this.foodstuffsService.getFoodstuffsObs().subscribe((foodstuffs: Foodstuff[]) => {
+    this.foodstuffsService.getFoodstuffs().subscribe((foodstuffs: Foodstuff[]) => {
       if (foodstuffs && foodstuffs.length) {
         this.title = foodstuffs[0].name;
       }
